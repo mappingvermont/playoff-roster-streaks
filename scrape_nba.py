@@ -29,6 +29,7 @@ def main():
         df_list.append(get_roster(year))
 
     final_df = pd.concat(df_list, ignore_index=True)
+    final_df["league"] = "NBA"
 
     final_df.to_csv("data/nba.csv", index=False, header=True)
 
