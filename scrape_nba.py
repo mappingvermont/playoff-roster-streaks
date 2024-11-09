@@ -30,7 +30,7 @@ def main():
 
     final_df = pd.concat(df_list, ignore_index=True)
 
-    final_df.to_csv("output.csv", index=False, header=True)
+    final_df.to_csv("data/nba.csv", index=False, header=True)
 
 
 if __name__ == "__main__":
