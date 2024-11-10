@@ -10,4 +10,3 @@ SELECT o.*,
 group by league, college, year - seqnum
 order by 5 desc
 limit 10;
-

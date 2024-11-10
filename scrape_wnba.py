@@ -24,7 +24,7 @@ def get_roster(year):
         column_offsets = [3, 14]
 
     df = pd.concat(
-        [df_list[0][2:], df_list[1][2:]], ignore_index=True
+        [df_list[0], df_list[1]], ignore_index=True
     ).iloc[:, column_offsets]
 
     df.columns = ["Name", "From"]
